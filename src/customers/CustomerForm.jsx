@@ -14,7 +14,8 @@ function CustomerForm() {
             const customerData = {
                 name: customerName,
             }
-            await axios.post("http://localhost:5000/customer/",customerData);
+            await axios.post("https://simplecustomerauth.herokuapp.com/customer", customerData);
+            // await axios.post("http://localhost:5000/customer/",customerData);
         }
         catch(err){
             console.error(err)

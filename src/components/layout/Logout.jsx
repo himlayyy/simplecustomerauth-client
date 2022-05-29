@@ -9,7 +9,8 @@ function Logout() {
   const navigate = useNavigate();
 
   async function logOut(){
-      await axios.get("http://localhost:5000/auth/logout");
+      await axios.get("https://simplecustomerauth.herokuapp.com/auth/login");
+      // await axios.get("http://localhost:5000/auth/logout");
       await getLoggedIn();
       navigate("/");
   }

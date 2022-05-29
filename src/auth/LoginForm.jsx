@@ -18,8 +18,8 @@ function LoginForm() {
         email, 
         password,
       };
-
-      await axios.post("http://localhost:5000/auth/login", loginData);
+      await axios.post("https://simplecustomerauth.herokuapp.com/login", loginData);
+      // await axios.post("http://localhost:5000/auth/login", loginData);
       await getLoggedIn();
       navigate("/");
     }

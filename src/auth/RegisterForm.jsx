@@ -21,8 +21,8 @@ function RegisterForm() {
         password,
         passwordVerify,
       };
-
-      await axios.post("http://localhost:5000/auth/", registerData,{
+      await axios.post("https://simplecustomerauth.herokuapp.com/auth", registerData,{
+      // await axios.post("http://localhost:5000/auth/", registerData,{
         withCredentials:true,
       });
       await getLoggedIn();
